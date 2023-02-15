@@ -111,15 +111,28 @@
             app:layout_constraintStart_toEndOf="@+id/textInputLayout2"
             app:layout_constraintTop_toTopOf="@+id/textInputLayout2" />
 
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/current_time_len"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/textCurrentLen"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout2" />
+
         <LinearLayout
             android:id="@+id/relaySwitchesLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="16dp"
             android:gravity="center_horizontal"
             android:orientation="vertical"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textInputLayout2">
+            app:layout_constraintTop_toBottomOf="@+id/textView">
 
             <com.google.android.material.switchmaterial.SwitchMaterial
                 android:id="@+id/relay1switch"
@@ -183,15 +196,17 @@
         </LinearLayout>
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/textCurrentLen"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:text="@string/safety_tip"
+            android:layout_marginStart="8dp"
+            android:text="@string/foo"
             android:textSize="16sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintBottom_toBottomOf="@+id/textView"
+            app:layout_constraintStart_toEndOf="@+id/textView"
+            app:layout_constraintTop_toTopOf="@+id/textView" />
+
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 

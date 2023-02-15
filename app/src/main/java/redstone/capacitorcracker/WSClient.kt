@@ -15,7 +15,7 @@ class WSClient : WebSocketClient(URI.create("ws://192.168.4.1:11451")) {
     }
 
     override fun onMessage(message: String?) {
-        Log.i("WSClient", "Message: $message")
+        //Log.i("WSClient", "Message: $message")
         try {
             if (message == null) return
             dataJson = JSONObject(message)
