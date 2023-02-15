@@ -35,38 +35,46 @@ class RelaySwitchListener(private val activity: MainActivity, private val relayN
 
                     Thread.sleep(200)
                 }
-                if (responseAvailable) {
-                    responseAvailable = false
-                    when (response) {
-                        0 -> {
-                            activity.runOnUiThread {
-                                Toast.makeText(
-                                    activity,
-                                    activity.resources.getString(R.string.relay_on),
-                                    Toast.LENGTH_SHORT
-                                ).show()
-                            }
-                        }
-                        1 -> {
-                            activity.runOnUiThread {
-                                Toast.makeText(
-                                    activity,
-                                    activity.resources.getString(R.string.invalid_relay_num),
-                                    Toast.LENGTH_SHORT
-                                ).show()
-                            }
-                        }
-                        2 -> {
-                            activity.runOnUiThread {
-                                Toast.makeText(
-                                    activity,
-                                    activity.resources.getString(R.string.already_on),
-                                    Toast.LENGTH_SHORT
-                                ).show()
-                            }
-                        }
-                    }
-                }
+//                if (responseAvailable) {
+//                    responseAvailable = false
+//                    when (response) {
+//                        0 -> {
+//                            activity.runOnUiThread {
+//                                Toast.makeText(
+//                                    activity,
+//                                    activity.resources.getString(R.string.relay_on),
+//                                    Toast.LENGTH_SHORT
+//                                ).show()
+//                            }
+//                        }
+//                        1 -> {
+//                            activity.runOnUiThread {
+//                                Toast.makeText(
+//                                    activity,
+//                                    activity.resources.getString(R.string.invalid_relay_num),
+//                                    Toast.LENGTH_SHORT
+//                                ).show()
+//                            }
+//                        }
+//                        2 -> {
+//                            activity.runOnUiThread {
+//                                Toast.makeText(
+//                                    activity,
+//                                    activity.resources.getString(R.string.already_on),
+//                                    Toast.LENGTH_SHORT
+//                                ).show()
+//                            }
+//                        }
+//                    }
+//                    return@Thread
+//                }
+//                activity.runOnUiThread {
+//                    Toast.makeText(
+//                        activity,
+//                        activity.resources.getString(R.string.timeout),
+//                        Toast.LENGTH_SHORT
+//                    ).show()
+//                }
             }.start()
         }
 

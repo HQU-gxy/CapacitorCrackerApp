@@ -11,14 +11,14 @@
     <string name="relay_on">开了</string>
     <string name="relay_off">关了</string>
     <string name="fuck">Fuck this!</string>
-    <string name="time_len_hint">放电时间</string>
+    <string name="time_len_hint">新的通电时间</string>
+    <string name="current_time_len">当前的通电时间：</string>
     <string name="set_it">彳亍</string>
     <string name="ms">ms</string>
     <string name="stop_fucking">不Fuck了</string>
     <string name="low_batt">🔋快🈚了</string>
     <string name="not_low_batt">🔋还🈶电</string>
     <string name="time_toooooo_long">时间太长了（最大65535ms）</string>
-    <string name="safety_tip">摸板子之前先给大电容放电❗</string>
     <string name="success">好了</string>
     <string name="fail">不好</string>
     <string name="already_on">已经开了</string>
